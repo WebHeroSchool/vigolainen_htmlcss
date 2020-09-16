@@ -10,19 +10,34 @@
     <link rel="stylesheet" href="style.css" />
     <title>Title</title>
   </head>
-  <body class="page">
+  <body class="page container">
     <header class="page-header">
       <div class="logo">app.creation</div>
       <nav class="menu">
-        <a class="menu__item" href="#">start</a>
-        <a class="menu__item" href="#">services</a>
-        <a class="menu__item" href="#">blog</a>
-        <a class="menu__item" href="#">contact us</a>
+        <button
+          class="menu__button"
+          type="button"
+          aria-label="кнопка мобильного меню"
+        >
+          <svg class="menu__icon" width="24" viewBox="0 0 12 10" fill="#0056EC">
+            <rect class="menu__icon-line" width="12" height="2" x="0" y="0" />
+            <rect class="menu__icon-line" width="12" height="2" x="0" y="4" />
+            <rect class="menu__icon-line" width="12" height="2" x="0" y="8" />
+          </svg>
+        </button>
+        <div class="menu__wrapper">
+          <a class="menu__item" href="#">start</a>
+          <a class="menu__item menu__item--active" href="#">services</a>
+          <a class="menu__item" href="#">blog</a>
+          <a class="menu__item" href="#">contact us</a>
+        </div>
       </nav>
     </header>
     <section class="main-section">
       <main class="main-content">
-        <h1 class="main-content__title">Building an App Without Design Expertise?</h1>
+        <h1 class="main-content__title">
+          Building an App Without Design Expertise?
+        </h1>
         <p class="main-content__subtitle">
           I help tech startups design better digital products without hiring a
           full-time designer
